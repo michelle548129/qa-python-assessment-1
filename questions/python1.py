@@ -35,6 +35,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from socket import INADDR_ALLHOSTS_GROUP
+
+
 def one(input1, input2):
 	len1 = len(input1)
 	len2 = len(input2)
@@ -148,8 +151,14 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
-
+	f = 1
+	if input == 1:
+		return 1
+	elif input >= 1:
+		while(input>1):
+			f *= input
+			input -= 1
+		return f
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 6>
