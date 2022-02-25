@@ -237,7 +237,9 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
+
 	return 0
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -264,7 +266,11 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+	x = input.lower().split("bert",2)
+	if len(x) >= 3:
+		return (x[1])
+	else:
+   		return ("")
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
