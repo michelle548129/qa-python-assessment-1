@@ -179,7 +179,10 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-	return False
+	if string[int-1:int].lower() == char:
+		return True
+	else:
+		return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
